@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .skills-container {
+            width: 80%;
+            max-width: 600px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skills-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            width: 100%;
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-bar div {
+            height: 25px;
+            border-radius: 10px;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 25px;
+            color: #fff;
+            font-weight: bold;
+            background: #9c27b0; /* Purple color */
+            width: 0; /* Start at 0 width for animation */
+            transition: width 1s ease-in-out;
+        }
+
+        .html { width: 90%; }
+        .css { width: 90%; }
+        .javascript { width: 80%; }
+        .csharp { width: 60%; }
+        .mysql { width: 60%; }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <h1>Minhas Habilidades</h1>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar"><div class="html">90%</div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar"><div class="css">90%</div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar"><div class="javascript">80%</div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">C#</div>
+            <div class="skill-bar"><div class="csharp">60%</div></div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">MySQL</div>
+            <div class="skill-bar"><div class="mysql">60%</div></div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.querySelector('.html').style.width = '90%';
+            document.querySelector('.css').style.width = '90%';
+            document.querySelector('.javascript').style.width = '80%';
+            document.querySelector('.csharp').style.width = '60%';
+            document.querySelector('.mysql').style.width = '60%';
+        }
+    </script>
+</body>
+</html>
